@@ -1,0 +1,35 @@
+#movies a {
+  cursor: pointer;
+  font-size: .875em;
+  color: #990012;
+  font-weight: 500;
+}
+#movies a:hover{
+  color:#af6c6c !important;
+}
+
+.movie-list{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  list-style: none;
+  justify-content: center;
+}
+
+.movie-list li {
+  padding: 0 0 20px 0;
+  flex: 0 0 200px;
+  margin: 10px;
+  background-color: #eaeaea;
+}
+.movie-list li img,.movie-list li a{
+  display: block;
+  width: 100%;
+}
+.movie-list li a{
+  text-align: center;
+  padding-top: 16px;
+}
