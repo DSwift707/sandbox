@@ -1,3 +1,59 @@
+/* Header style start */
+div#mainHeader {
+  width: 100%;
+  background-color: #990012;
+  color: #fff;
+  box-shadow: 0px 2px 8px #9b9b9b;
+  border: unset;
+  position: fixed;
+  top: 0;
+}
+div#mainHeader h1, div#mainHeader nav{
+  padding: 6px 10%;
+  display: inline-block;
+  margin: unset;
+}
+div#mainHeader nav {
+  float: right;
+
+}
+div#mainHeader nav a{
+  text-decoration: none;
+  color: #fff;
+}
+div#mainHeader nav a:hover{
+  color: antiquewhite !important;
+}
+input:focus {
+  outline-width: 0 !important;
+}
+/* Header style end */
+.search-bar {
+  padding: 20px 10%;
+}
+.search-bar label {
+  font-size: 20px;
+  color: #545454;
+  font-weight: 500;
+  vertical-align: top;
+}
+.search-bar input {
+  width: 200px;
+  padding: 6px 20px;
+  border-radius: 25px;
+  border: 1px solid #990012;
+  margin-left: 12px;
+}
+.loading-text{
+  width: 100%;
+  font-size: 20px;
+  color: #990012;
+  text-align: center;
+}
+#movies{
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
 #movies a {
   cursor: pointer;
   font-size: .875em;
@@ -5,16 +61,16 @@
   font-weight: 500;
 }
 #movies a:hover{
-  color:#af6c6c !important;
+  color:#af8383 !important;
 }
 
 .movie-list{
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 100%;
+  width: 80%;
   list-style: none;
   justify-content: center;
 }
@@ -32,4 +88,47 @@
 .movie-list li a{
   text-align: center;
   padding-top: 16px;
+}
+
+/* Movie Detail */
+/* Would be easier with sass here */
+.movie-details-container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 80px;
+}
+.movie-details-container p, .movie-details-container h1{
+  padding-left:10%;
+  padding-right:10%;
+}
+.movie-backdrop{
+  width: 100%;
+}
+p.tagline {
+  font-size: 34px;
+  color: #9b9b9b;
+  font-style: italic;
+}
+p.sub-detail {
+  font-size: 12px;
+  font-weight: bold;
+  margin: 0px;
+  line-height: 1.48;
+}
+span.micro-header {
+  font-size: 20px;
+  color: #9b9b9b;
+  vertical-align: text-top;
+  display: inline-block;
+  margin-top: 8px;
+  margin-left: 12px;
+}
+#movies .movie-details-container h3 {
+  margin: 0;
+  padding: 60px 10% 30px;
+  color: #990012;
+  font-size: 24px;
+}
+#movies .movie-details-container .movie-list{
+  width: 100% !important;
 }

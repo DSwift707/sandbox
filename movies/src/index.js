@@ -5,12 +5,24 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Header from './components/header.js';
 import Movies from './components/movies.js';
+import MovieDetail from './components/movieDetail.js';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
 
 ReactDOM.render(
-  <div id="movies">
-    <Header />
-    <Movies />
-  </div>
+  <Router>
+    <div id="movies">
+      <Header />
+      <Switch>
+        <Route path="/movie/:id"  component={(props) => <MovieDetail {...props} key={window.location.pathname}/>} />
+        <Route path="/" exact component={Movies} />
+      </Switch>
+      
+    </div>
+  </Router>
   
   ,
   document.getElementById('root')
